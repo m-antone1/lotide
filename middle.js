@@ -1,3 +1,16 @@
+const middle = function(arr) {
+  let midArr = [];
+  if(arr.length <= 2) {
+      return midArr;
+  } 
+  let index = arr.length / 2;
+  if(arr.length % 2 === 0) {
+      midArr.push(arr[index - 1], arr[index])
+  } else {
+      midArr.push(arr[Math.floor(index)])
+  }
+  return midArr;
+}
 const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -19,7 +32,3 @@ const assertArraysEqual = function(actual, expected) {
   }
   console.assert(actual === expected, message);
 };
-  
-
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); 
-assertArraysEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); 
