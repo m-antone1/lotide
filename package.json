@@ -1,0 +1,29 @@
+{
+  "name": "@mantone1/lotide",
+  "version": "1.0.0",
+  "description": "Clone of the lotide repository",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-antone1/lotide.git"
+  },
+  "author": "Michael Antone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-antone1/lotide/issues"
+  },
+  "homepage": "https://github.com/m-antone1/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.0",
+    "mocha": "^8.2.1"
+  },
+  "dependencies": {
+    "lotide": "^1.0.1"
+  }
+}
